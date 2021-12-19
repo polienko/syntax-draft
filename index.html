@@ -6,118 +6,154 @@
 <table>
   <thead>
     <tr>
-      <th>PYTHON - ТИПЫ ДАННЫХ</th>
-      <th>JAVASCRIPT - ТИПЫ ДАННЫХ</th>
-      <th>PHP - ТИПЫ ДАННЫХ</th>
+      <th class="py">PYTHON - ТИПЫ ДАННЫХ</th>
+      <th class="js">JAVASCRIPT - ТИПЫ ДАННЫХ</th>
+      <th class="php">PHP - ТИПЫ ДАННЫХ</th>
     </tr>
   </thead>
   
   <tbody>
   
-    
-    
     <tr>
-      <td>type(x) <span class="comment">// if isinstance(x, int) OR if type(x) is int (without quotes)</span></td>
-      <td>typeof(x) <span class="comment">// typeof x</span></td>
-      <td>var_dump($x);</td>
+      <td class="py">type(x) <span class="comment">// if isinstance(x, int) OR if type(x) is int (without quotes)</span></td>
+      <td class="js">typeof(x) <span class="comment">// typeof x</span></td>
+      <td class="php">var_dump($x); <span class="comment">// if (gettype('text') == 'string') {...}; if (is_string('text')) {...};</span></td>
     </tr>    
     
     <tr>
-      <td>None</td>
-      <td>undefined</td>
-      <td></td>
+      <td class="py">None</td>
+      <td class="js">undefined, null <span class="comment">// typeof(null) === 'object'</span></td>
+      <td class="php">NULL</td>
     </tr>
     
     <tr>
-      <td></td>
-      <td>null <span class="comment">// typeof(null) === 'object'</span></td>
-      <td></td>
+        <td class="py">int, float, complex (100 + 3j), long (устаревший)</td>
+        <td class="js">number <span class="comment">// числа в тч дробные, Infinity, -Infinity, NaN</span></td>
+        <td class="php">integer, double (for type 'float')</td>
     </tr>
 
     <tr>
-        <td>int, float, complex (100 + 3j), long (устаревший)</td>
-        <td>number <span class="comment">// числа в тч дробные, Infinity, -Infinity, NaN</span></td>
-        <td>int, float</td>
+        <td class="py"></td>
+        <td class="js">bigint <span class="comment">// 2^53-1 > 9 007 199 254 740 991 (или отрицательное)</span></td>
+        <td class="php"></td>
     </tr>
 
     <tr>
-        <td></td>
-        <td>bigint <span class="comment">// 2^53-1 > 9 007 199 254 740 991 (или отрицательное)</span></td>
-        <td></td>
+        <td class="py">str</td>
+        <td class="js">string <span class="comment">// '', "a", "abc", `result ${1+2}`</span></td>
+        <td class="php">string</td>
     </tr>
 
     <tr>
-        <td>str</td>
-        <td>string <span class="comment">// '', "a", "abc", `result ${1+2}`</span></td>
-        <td></td>
+        <td class="py">bool <span class="comment"># True, False, x and y (or, not)</span></td>
+        <td class="js">boolean <span class="comment">// true, false, 2 > 1</span></td>
+        <td class="php">boolean</td>
     </tr>
 
     <tr>
-        <td>bool <span class="comment"># True, False, x and y (or, not)</span></td>
-        <td>boolean <span class="comment">// true, false, 2 > 1</span></td>
-        <td></td>
+        <td class="py"></td>
+        <td class="js">object <span class="comment">// если есть new, то это сразу 'object', искл new Function<span></td>
+        <td class="php"></td>
     </tr>
 
     <tr>
-        <td></td>
-        <td>object <span class="comment">// если есть new, то это сразу 'object', искл new Function<span></td>
-        <td></td>
+        <td class="py"></td>
+        <td class="js">symbol <span class="comment">// Symbol("id") - es6 - уник ключ для свойства объекта</span></td>
+        <td class="php"></td>
     </tr>
 
     <tr>
-        <td></td>
-        <td>symbol <span class="comment">// Symbol("id") - es6 - уник ключ для свойства объекта</span></td>
-        <td></td>
+        <td class="py"></td>
+        <td class="js">function <span class="comment">// typeof(class C{}) === 'function'</span></td>
+        <td class="php"></td>
     </tr>
 
     <tr>
-        <td></td>
-        <td>function <span class="comment">// typeof(class C{}) === 'function'</span></td>
-        <td></td>
+        <td class="py">list, tuple, range</td>
+        <td class="js">object, ?, ?</td>
+        <td class="php">array, ?, ?</td>
     </tr>
 
     <tr>
-        <td>list, tuple, range</td>
-        <td>object</td>
-        <td></td>
+        <td class="py">dict</td>
+        <td class="js">object</td>
+        <td class="php">array</td>
     </tr>
 
     <tr>
-        <td>dict</td>
-        <td>object</td>
-        <td></td>
+        <td class="py">set, frozenset</td>
+        <td class="js">object, ?</td>
+        <td class="php"></td>
     </tr>
 
     <tr>
-        <td>set, frozenset</td>
-        <td>object</td>
-        <td></td>
+        <td class="py">bytes, bytearray, memoryview</td>
+        <td class="js"></td>
+        <td class="php"></td>
     </tr>
 
     <tr>
-        <td>bytes, bytearray, memoryview</td>
-        <td></td>
-        <td></td>
+        <td class="py"></td>
+        <td class="js"></td>
+        <td class="php"></td>
     </tr>
 
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="py"></td>
+        <td class="js"></td>
+        <td class="php"></td>
     </tr>
 
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="py"></td>
+        <td class="js"></td>
+        <td class="php"></td>
     </tr>
 
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="py"></td>
+        <td class="js"></td>
+        <td class="php"></td>
     </tr>
+
+    <tr>
+        <td class="py"></td>
+        <td class="js"></td>
+        <td class="php"></td>
+    </tr>
+
+    <tr>
+        <td class="py"></td>
+        <td class="js"></td>
+        <td class="php"></td>
+    </tr>
+
+    <tr>
+        <td class="py"></td>
+        <td class="js"></td>
+        <td class="php"></td>
+    </tr>
+
+    <tr>
+        <td class="py"></td>
+        <td class="js"></td>
+        <td class="php"></td>
+    </tr>
+
+
 
   </tbody>
   
 </table>
+
+
+<!-- SCRIPT TO HIDE ALL ELEMENTS WITH CLASSNAME -->
+<!-- 
+<script>
+    var divsToHide = document.getElementsByClassName("js"); //divsToHide is an array
+    for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].style.visibility = "hidden"; // or
+        divsToHide[i].style.display = "none"; // depending on what you're doing
+    }
+</script>
+-->

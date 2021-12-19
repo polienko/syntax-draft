@@ -9,6 +9,7 @@ table {
 
 td {
   width: 400px;
+  vertical-align: top;
 }
 
 table th {
