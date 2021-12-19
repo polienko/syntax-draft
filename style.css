@@ -1,0 +1,37 @@
+body {
+  font: 16px/1.5 Helvetica, Arial, sans-serif;
+}
+
+table {
+  width: 1200px;
+  margin: 20px auto;
+}
+
+td {
+  width: 400px;
+}
+
+table th {
+  text-align: left;
+}
+table tr, table col {
+  transition: all 0.1s;
+}
+table tbody tr:hover {
+  background-color: rgba(0, 140, 203, 0.2);
+}
+table col.hover {
+  background-color: rgba(0, 140, 203, 0.2);
+}
+
+table, th, td {
+  border: 1px solid #CCC;
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {background: #faf0f0}
+
+.comment {
+  color: #1871d6;
+  font: 12px/1.5 Helvetica, Arial, sans-serif;
+}
