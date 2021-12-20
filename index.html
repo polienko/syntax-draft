@@ -1,19 +1,29 @@
-<link rel="stylesheet" href="style.css" type="text/css">
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Resizable Table Columns | Webdevtrick.com</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
 <!-- 
 -- убрать кэширование CSS
 - строгая типизация?
 
 -->
 
+
+<body>
+
 <div id="container">
 <a href="conditions.html">go to: conditions</a>
+
 
 <table>
   <thead>
     <tr>
-      <th class="py">PYTHON - ТИПЫ ДАННЫХ</th>
-      <th class="js">JAVASCRIPT - ТИПЫ ДАННЫХ</th>
-      <th class="php">PHP - ТИПЫ ДАННЫХ</th>
+      <th>PYTHON<span class="resize-handle"></span></th>
+      <th>JAVASCRIPT<span class="resize-handle"></span></th>
+      <th>PHP<span class="resize-handle"></span></th>
     </tr>
   </thead>
   
@@ -153,6 +163,8 @@
 
 </div>
 
+<script  src="resize.js"></script>
+
 <!-- SCRIPT TO HIDE ALL ELEMENTS WITH CLASSNAME -->
 <!-- 
 <script>
@@ -163,3 +175,6 @@
     }
 </script>
 -->
+
+</body>
+</html>

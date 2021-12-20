@@ -9,9 +9,9 @@
 <table>
   <thead>
     <tr>
-      <th class="py">PYTHON - CONDITIONS</th>
-      <th class="js">JAVASCRIPT - CONDITIONS</th>
-      <th class="php">PHP - CONDITIONS</th>
+      <th class="py" data-type="numeric">PYTHON<span class="resize-handle"></span></th>
+      <th class="js" data-type="text-short">JAVASCRIPT<span class="resize-handle"></span></th>
+      <th class="php" data-type="text-long">PHP<span class="resize-handle"></span></th>
     </tr>
   </thead>
   
@@ -55,9 +55,20 @@
     </tr>
 
     <tr>
-        <td class="py"></td>
-        <td class="js"></td>
-        <td class="php"></td>
+        <td class="py">i = 1<br/>
+                        while i <= 10:<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;print(i ** 2)<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;i += 1</td>
+        <td class="js">let i = 0;<br/>
+                        while (i < 3) {<br/>
+                        &nbsp;&nbsp;alert( i );<br/>
+                        &nbsp;&nbsp;i++;<br/>
+                        }</td>
+        <td class="php">$i = 1;<br/>
+                        while ($i <= 10) {<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;echo $i;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;$i++;<br/>
+                        }</td>
     </tr>
 
     <tr>
@@ -97,6 +108,9 @@
 </table>
 
 </div>
+
+
+<script  src="resize.js"></script>
 
 <!-- SCRIPT TO HIDE ALL ELEMENTS WITH CLASSNAME -->
 <!-- 
