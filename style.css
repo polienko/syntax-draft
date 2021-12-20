@@ -2,9 +2,15 @@ body {
   font: 16px/1.5 Helvetica, Arial, sans-serif;
 }
 
+div#container {
+   width: 1200px;
+   /* background-color: rgba(0, 140, 203, 0.2); */
+   margin: 20px auto;
+}
+
 table {
-  width: 1200px;
-  margin: 20px auto;
+  
+  
 }
 
 td {
@@ -31,6 +37,7 @@ table, th, td {
 }
 
 tr:nth-child(even) {background: #faf0f0}
+tr:nth-child(odd) {background: #FFF}
 
 .comment {
   color: #1871d6;
