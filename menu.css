@@ -80,9 +80,9 @@ span#header {
 }
 
 @media only screen and (max-device-width: 350px) {
-  .topnav a {font-size: 60px;}
-  .topnav a.icon {font-size: 60px; margin:20px 0 0 0;}
-  span#header {font-size: 60px; margin:0 0 0 80px;widht:100%;}
+  .topnav a {font-size: 120px;}
+  .topnav a.icon {font-size: 120px; margin:20px 0 0 0;}
+  span#header {font-size: 120px; margin:0 0 0 140px;widht:100%;}
   table{width:100%;}
 
 }

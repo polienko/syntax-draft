@@ -1,0 +1,75 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+table {
+  min-width: 100vw;
+}
+
+tr {
+  display: -webkit-flex;
+  display: flex;
+}
+
+th {
+  -webkit-flex: 3 1 100px;
+  -ms-flex:  3 1 100px;
+  flex: 3 1 100px;;
+}
+
+td {
+  -webkit-flex: 3 1 100px;
+  -ms-flex:  3 1 100px;
+  flex: 3 1 100px;;
+}
+
+/* STYLING */
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  border-right: 1px solid #CCC;
+  background: #5cb85c;
+  color: white;
+  text-align: left;
+  font-weight: normal;
+  font-size: 1.1rem;
+  padding: 5px 5px 5px 10px;
+}
+th:last-child {
+  border-right: 0;
+}
+
+td {
+  border-bottom: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+  color: #808080;
+  vertical-align: top;
+  padding: 5px 5px 5px 10px;
+}
+td:last-child {
+  border-right: 0;
+}
+
+tr:nth-child(even) {background: #f8f6ff;}
+tr:nth-child(odd) {background: #FFF;}
+
+span.comment {
+  color: #1871d6;
+  font: 12px/1.5 Helvetica, Arial, sans-serif;
+}
+
+table tbody tr:hover {
+  background-color: rgba(0, 140, 203, 0.2);
+}
+table tbody tr td:hover {
+  color: black;
+}
