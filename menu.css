@@ -51,7 +51,9 @@ span#header {
   background-color: #04AA6D;
   color: white;
 }*/
-
+@media only screen and (max-device-width: 1280px) {
+  html, body {width: 1280px;} /*style - minmax 425+425+430=1280*/
+}
 
 @media only screen and (max-device-width: 800px) {
   .topnav a {font-size: 20px;}
@@ -80,5 +82,7 @@ span#header {
 @media only screen and (max-device-width: 350px) {
   .topnav a {font-size: 60px;}
   .topnav a.icon {font-size: 60px; margin:20px 0 0 0;}
-  span#header {font-size: 60px; margin:0 0 0 80px;}
+  span#header {font-size: 60px; margin:0 0 0 80px;widht:100%;}
+  table{width:100%;}
+
 }

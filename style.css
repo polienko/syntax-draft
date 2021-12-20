@@ -24,9 +24,9 @@ table {
 
   display: grid;
   grid-template-columns:
-    minmax(150px, 350px)
-    minmax(150px, 350px)
-    minmax(150px, 1fr);
+    minmax(425px, 350px)
+    minmax(425px, 350px)
+    minmax(430px, 1fr);
 }
 
 thead {display: contents;}

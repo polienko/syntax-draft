@@ -1,5 +1,5 @@
 // Code By Webdevtrick ( https://webdevtrick.com )
-const min = 150;
+const min = 100;
 // The max (fr) values for grid-template-columns
 const columnTypeToRatioMap = {
   numeric: 1,
