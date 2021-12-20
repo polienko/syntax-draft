@@ -19,7 +19,7 @@ table {
           flex: 1;
   border-collapse: collapse;
   border: 0;
-
+  border-right: 1px solid #CCC;
   
   display: grid;
   grid-template-columns: 
@@ -32,23 +32,13 @@ thead {display: contents;}
 tbody {display: contents;}
 tr {display: contents;} /* BREAKS ON HOVER */
 
-th,
-td {
-  padding: 5px;
-  padding-left: 10px;
-  /*overflow: hidden;*/
-  /*text-overflow: ellipsis;*/
-  /*white-space: nowrap;*/
-  word-wrap: normal;
-}
-
-
-td {
-color: #808080;
-}
-
 
 th {
+  border-right: 1px solid #CCC;
+  padding: 5px;
+  padding-left: 10px;
+  word-wrap: normal;
+
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -60,8 +50,16 @@ th {
   position: relative;
 }
 
-th:last-child {
-  border: 0;
+td {
+  color: #808080;
+  vertical-align: top;
+
+  border-bottom: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+
+  padding: 5px;
+  padding-left: 10px;
+  word-wrap: normal;  
 }
 
 .resize-handle {
@@ -74,6 +72,7 @@ th:last-child {
   width: 3px;
   cursor: col-resize;
 }
+
 
 .resize-handle:hover,
 .header--being-resized .resize-handle {
@@ -95,45 +94,14 @@ th:hover .resize-handle {
 tr:nth-child(even) td {background: #f8f6ff;} /* BREAKS ON HOVER */
 tr:nth-child(odd) td {background: #FFF} /* BREAKS ON HOVER */
 
-.comment {
+span.comment {
   color: #1871d6;
   font: 12px/1.5 Helvetica, Arial, sans-serif;
 }
 
-table, th, td {
-  /* border-collapse: collapse; */
-}
-
-
-
-table tr, table col {
-  transition: all 0.1s;
-}
-table tbody tr:hover {
+table tbody tr td:hover {
   background-color: rgba(0, 140, 203, 0.2);
-}
-table col.hover {
-  background-color: rgba(0, 140, 203, 0.2);
-}
-
-td {
-  /* width: 400px;*/
-  vertical-align: top;
-}
-
-
-table {
-  /*border-left: 1px solid #CCC;*/
-  border-right: 1px solid #CCC;
-}
-
-td {
-  border-bottom: 1px solid #CCC;
-  border-right: 1px solid #CCC;
-}
-
-th {
-  border-right: 1px solid #CCC;
+  color: black;
 }
 
 div#container {
