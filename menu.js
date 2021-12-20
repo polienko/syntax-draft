@@ -8,4 +8,4 @@ function myFunction() {
   }
 }
 
-document.getElementById('menu').innerHTML += '<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a><div id="myLinks"><a href="index.html">DATATYPES</a><a href="conditions.html">CONDITIONS</a></div>';
+document.getElementById('menu').innerHTML += '<span id="ico"><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></span><div id="myLinks"><a href="index.html">DATATYPES</a><a href="conditions.html">CONDITIONS</a></div>';

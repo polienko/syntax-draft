@@ -3,6 +3,7 @@
   overflow: hidden;
   background-color: #333;
   position: relative;
+  width: 100%;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -35,6 +36,7 @@ span#header {
   position: absolute;
   left: 0;
   top: 0;
+  font-size: 22px;
 }
 
 /* Add a grey background color on mouse-over */
@@ -49,3 +51,34 @@ span#header {
   background-color: #04AA6D;
   color: white;
 }*/
+
+
+@media only screen and (max-device-width: 800px) {
+  .topnav a {font-size: 20px;}
+  .topnav a.icon {font-size: 20px; margin:5px 0 0 0;}
+  span#header {font-size: 20px; margin:0 0 0 40px;}
+}
+
+@media only screen and (max-device-width: 650px) {
+  .topnav a {font-size: 30px;}
+  .topnav a.icon {font-size: 30px; margin:5px 0 0 0;}
+  span#header {font-size: 30px; margin:0 0 0 50px;}
+}
+
+@media only screen and (max-device-width: 550px) {
+  .topnav a {font-size: 40px;}
+  .topnav a.icon {font-size: 40px; margin:10px 0 0 0;}
+  span#header {font-size: 40px; margin:0 0 0 60px;}
+}
+
+@media only screen and (max-device-width: 450px) {
+  .topnav a {font-size: 50px;}
+  .topnav a.icon {font-size: 50px; margin:10px 0 0 0;}
+  span#header {font-size: 50px; margin:0 0 0 70px;}
+}
+
+@media only screen and (max-device-width: 350px) {
+  .topnav a {font-size: 60px;}
+  .topnav a.icon {font-size: 60px; margin:20px 0 0 0;}
+  span#header {font-size: 60px; margin:0 0 0 80px;}
+}
