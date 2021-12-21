@@ -64,6 +64,8 @@ span#header {
 }
 */
 
+td,th {overflow-wrap:anywhere;}
+
 @media only screen and (max-device-width: 800px) {
   .topnav a {font-size: 20px;}
   .topnav a.icon {font-size: 20px; margin:5px 0 0 0;}
@@ -89,35 +91,39 @@ span#header {
 }
 
 
-@media only screen and (max-device-width: 2560px) {
+@media only screen and (min-device-width: 1441px)  and (max-device-width: 2560px) {
     body{background: purple;}
 }
 
-@media only screen and (max-device-width: 1440px) {
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
     body{background: blue;}
 }
 
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
     body{background: dodgerblue;}
 }
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
     body{background: green;}
 }
 
-@media only screen and (max-device-width: 425px) {
+@media only screen and (min-device-width: 376px) and (max-device-width: 425px) {
     body{background: yellow;}
+    th,td{font-size:30px;overflow-wrap:anywhere;}
+    .comment{font-size:20px;overflow-wrap:anywhere;}    
 }
 
-@media only screen and (max-device-width: 375px) {
+@media only screen and (min-device-width: 321px) and (max-device-width: 375px) {
     body{background: orange;}
+    th,td{font-size:40px;overflow-wrap:anywhere;}
+    .comment{font-size:30px;overflow-wrap:anywhere;}
 }
 
 
 @media only screen and (max-device-width: 320px) {
     body{background: red;}
-    th,td{font-size:50px;overflow-wrap:break-word;hyphens:manual;inline-size:100px;}
-    .comment{font-size:40px;overflow-wrap:break-word;hyphens:manual;inline-size:100px;}
+    th,td{font-size:50px;overflow-wrap:anywhere;}
+    .comment{font-size:40px;overflow-wrap:anywhere;}
 
     .topnav a {font-size: 120px;}
     .topnav a.icon {font-size: 120px; margin:20px 0 0 0;}
