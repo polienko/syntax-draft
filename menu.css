@@ -115,15 +115,15 @@ td,th {overflow-wrap:anywhere;}
 
 @media only screen and (min-device-width: 321px) and (max-device-width: 375px) {
     body{background: orange;}
-    th,td{font-size:40px;overflow-wrap:anywhere;}
-    .comment{font-size:30px;overflow-wrap:anywhere;}
+    th,td{font-size:30px;overflow-wrap:anywhere;}
+    .comment{font-size:20px;overflow-wrap:anywhere;}
 }
 
 
 @media only screen and (max-device-width: 320px) {
     body{background: red;}
-    th,td{font-size:50px;overflow-wrap:anywhere;}
-    .comment{font-size:40px;overflow-wrap:anywhere;}
+    th,td{font-size:30px;overflow-wrap:anywhere;}
+    .comment{font-size:20px;overflow-wrap:anywhere;}
 
     .topnav a {font-size: 120px;}
     .topnav a.icon {font-size: 120px; margin:20px 0 0 0;}
