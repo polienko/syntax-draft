@@ -66,30 +66,6 @@ span#header {
 
 td,th {overflow-wrap:anywhere;}
 
-@media only screen and (max-device-width: 800px) {
-  .topnav a {font-size: 20px;}
-  .topnav a.icon {font-size: 20px; margin:5px 0 0 0;}
-  span#header {font-size: 20px; margin:0 0 0 40px;}
-}
-
-@media only screen and (max-device-width: 650px) {
-  .topnav a {font-size: 30px;}
-  .topnav a.icon {font-size: 30px; margin:5px 0 0 0;}
-  span#header {font-size: 30px; margin:0 0 0 50px;}
-}
-
-@media only screen and (max-device-width: 550px) {
-  .topnav a {font-size: 40px;}
-  .topnav a.icon {font-size: 40px; margin:10px 0 0 0;}
-  span#header {font-size: 40px; margin:0 0 0 60px;}
-}
-
-@media only screen and (max-device-width: 450px) {
-  .topnav a {font-size: 50px;}
-  .topnav a.icon {font-size: 50px; margin:10px 0 0 0;}
-  span#header {font-size: 50px; margin:0 0 0 70px;}
-}
-
 
 @media only screen and (min-device-width: 1441px)  and (max-device-width: 2560px) {
     body{background: purple;}
@@ -104,28 +80,44 @@ td,th {overflow-wrap:anywhere;}
 }
 
 @media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
-    body{background: green;}
+  body{background: green;}
+
+  /* menu  */
+  .topnav a {font-size: 30px;}
+  .topnav a.icon {font-size: 30px; margin:5px 0 0 0;}
+  span#header {font-size: 30px; margin:0 0 0 50px;}    
 }
 
 @media only screen and (min-device-width: 376px) and (max-device-width: 425px) {
-    body{background: yellow;}
-    th,td{font-size:30px;overflow-wrap:anywhere;}
-    .comment{font-size:20px;overflow-wrap:anywhere;}    
+  body{background: yellow;}
+  th,td{font-size:30px;overflow-wrap:anywhere;}
+  .comment{font-size:20px;overflow-wrap:anywhere;}    
+
+  /* menu */
+  .topnav a {font-size: 60px;}
+  .topnav a.icon {font-size: 60px; margin:10px 0 0 0;}
+  span#header {font-size: 60px; margin:0 0 0 80px;}    
 }
 
 @media only screen and (min-device-width: 321px) and (max-device-width: 375px) {
-    body{background: orange;}
-    th,td{font-size:30px;overflow-wrap:anywhere;}
-    .comment{font-size:20px;overflow-wrap:anywhere;}
+  body{background: orange;}
+  th,td{font-size:33px;overflow-wrap:anywhere;}
+  .comment{font-size:20px;overflow-wrap:anywhere;}
+
+  /* menu */
+  .topnav a {font-size: 70px;}
+  .topnav a.icon {font-size: 70px; margin:10px 0 0 0;}
+  span#header {font-size: 70px; margin:0 0 0 90px;}    
 }
 
 
 @media only screen and (max-device-width: 320px) {
-    body{background: red;}
-    th,td{font-size:30px;overflow-wrap:anywhere;}
-    .comment{font-size:20px;overflow-wrap:anywhere;}
+  body{background: red;}
+  th,td{font-size:33px;overflow-wrap:anywhere;}
+  .comment{font-size:20px;overflow-wrap:anywhere;}
 
-    .topnav a {font-size: 120px;}
-    .topnav a.icon {font-size: 120px; margin:20px 0 0 0;}
-    span#header {font-size: 120px; margin:0 0 0 140px;}
+  /* menu */
+  .topnav a {font-size: 80px;}
+  .topnav a.icon {font-size: 80px; margin:13px 0 0 0;}
+  span#header {font-size: 80px; margin:0 0 0 100px;}
 }
