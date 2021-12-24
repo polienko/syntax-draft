@@ -68,20 +68,15 @@ td,th {overflow-wrap:anywhere;}
 
 
 @media only screen and (min-device-width: 1441px)  and (max-device-width: 2560px) {
-    body{background: purple;}
 }
 
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-    body{background: blue;}
 }
 
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-    body{background: dodgerblue;}
 }
 
 @media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
-  body{background: green;}
-
   /* menu  */
   .topnav a {font-size: 30px;}
   .topnav a.icon {font-size: 30px; margin:5px 0 0 0;}
@@ -89,7 +84,6 @@ td,th {overflow-wrap:anywhere;}
 }
 
 @media only screen and (min-device-width: 376px) and (max-device-width: 425px) {
-  body{background: yellow;}
   th,td{font-size:30px;overflow-wrap:anywhere;}
   .comment{font-size:20px;overflow-wrap:anywhere;}    
 
@@ -100,7 +94,6 @@ td,th {overflow-wrap:anywhere;}
 }
 
 @media only screen and (min-device-width: 321px) and (max-device-width: 375px) {
-  body{background: orange;}
   th,td{font-size:33px;overflow-wrap:anywhere;}
   .comment{font-size:20px;overflow-wrap:anywhere;}
 
@@ -112,7 +105,6 @@ td,th {overflow-wrap:anywhere;}
 
 
 @media only screen and (max-device-width: 320px) {
-  body{background: red;}
   th,td{font-size:33px;overflow-wrap:anywhere;}
   .comment{font-size:20px;overflow-wrap:anywhere;}
 
@@ -121,3 +113,16 @@ td,th {overflow-wrap:anywhere;}
   .topnav a.icon {font-size: 80px; margin:13px 0 0 0;}
   span#header {font-size: 80px; margin:0 0 0 100px;}
 }
+
+
+/* DEBUG BACKGROUNDS*/
+
+/*
+@media only screen and (min-device-width: 1441px)  and (max-device-width: 2560px) {body{background: purple;}}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {body{background: blue;}}
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {body{background: dodgerblue;}}
+@media only screen and (min-device-width: 426px) and (max-device-width: 768px) {body{background: green;}}
+@media only screen and (min-device-width: 376px) and (max-device-width: 425px) {body{background: yellow;}}
+@media only screen and (min-device-width: 321px) and (max-device-width: 375px) {body{background: orange;}}
+@media only screen and (max-device-width: 320px) {body{background: red;}}
+*/

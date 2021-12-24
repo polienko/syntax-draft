@@ -1,0 +1,1 @@
+- добавить html тэги в conditions.html

@@ -1,0 +1,249 @@
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>STRINGS</title>
+  <link rel="stylesheet" href="style2.css">
+   <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+
+<!-- Top Navigation Menu -->
+<div class="topnav" id="menu">
+    <span id="header">STRINGS</span>
+</div>
+<script  src="menu.js"></script>
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th>PYTHON<span class="resize-handle"></span></th>
+      <th>JAVASCRIPT<span class="resize-handle"></span></th>
+      <th>PHP<span class="resize-handle"></span></th>
+    </tr>
+  </thead>
+  
+  <tbody>
+  
+    <tr>
+        <td class="py">
+            a = 'oNe'<br/>
+            b = '01'<br/>
+            c = a + b # oNe01<br/>
+            print(c)<br/>
+        </td>
+        <td class="js">
+            let a = 'oNe';<br/>
+            let b = '01';<br/>
+            let c = a + b; // oNe01<br/>
+            console.log(c);<br/>
+        </td>
+        <td class="php">
+            $a = 'oNe';<br/>
+            $b = '01';<br/>
+            $c = $a . $b; // oNe01<br/>
+            echo($c);<br/>
+        </td>
+    </tr>
+  
+    <tr>
+        <td class="py">
+            len(c) # 8<br/>
+            a * 3 # oNeoNeoNe<br/>
+        </td>
+        <td class="js">
+            c.length; // 8<br/>
+            a.repeat(3);<br/>
+        </td>
+        <td class="php">
+            strlen($c); // 8<br/>
+            str_repeat($a, 3);<br/>
+        </td>
+    </tr>
+  
+    <tr>
+        <td class="py">
+            a[0] # 'o'<br/>
+            a[-1] # 'e'<br/>
+            a[0:1]<br/>
+        </td>
+        <td class="js">
+            a[0]; // 'o'<br/>
+            $a[-1]; // undefined<br/>
+            a.slice(0,2); // 'oN'<br/>
+            a.substring(0,2); // 'oN'<br/>
+        </td>
+        <td class="php">
+            $a[0]; // 'o'<br/>
+            $a[-1]; // 'e'<br/>
+            substr($a, 0, 2); // 'oN'<br/>
+        </td>
+    </tr>
+  
+    <tr>
+        <td class="py">
+            a.find('e') # 2<br/>
+            a.find('g') # -1<br/>
+            a.rfind('e') # 2<br/>
+        </td>
+        <td class="js">
+            a.indexOf('e'); // 2<br/>
+            a.indexOf('g'); // -1<br/>
+            a.lastIndexOf('e'); // 2<br/>
+        </td>
+        <td class="php">
+            strpos($a, 'e'); // 2<br/>
+            strpos($a, 'g'); //<br/>
+            strrpos($a, 'e'); // 2<br/>
+        </td>
+    </tr>
+  
+    <tr>
+        <td class="py">
+            a.split('N') # ['o','e']<br/>
+        </td>
+        <td class="js">
+            a.split('N'); // ['o','e']<br/>
+        </td>
+        <td class="php">
+            explode('N', $a); // ['o','e']<br/>
+        </td>
+    </tr>
+  
+    <tr>
+        <td class="py">
+            a.lower() # 'one'<br/>
+        </td>
+        <td class="js">
+            a.toLowerCase();<br/>
+        </td>
+        <td class="php">
+            strtolower($a);<br/>
+        </td>
+    </tr>
+  
+    <tr>
+        <td class="py">
+            a.replace('N','n')<br/>
+        </td>
+        <td class="js">
+            a.replace('N','n');<br/>
+        </td>
+        <td class="php">
+            str_replace('N','n',$a);<br/>
+        </td>
+    </tr>
+  
+    <tr>
+        <td class="py">
+            b = '01'<br/>
+            b.isdigit() # True<br/>
+        </td>
+        <td class="js">
+            let b = '01';<br/>
+            Number.isInteger(parseFloat(b)); // true<br/>
+        </td>
+        <td class="php">
+            $b = '01';<br/>
+            ctype_digit($b); // 1<br/>
+        </td>
+    </tr>
+  
+    <tr>
+        <td class="py">
+            a.startswith('oN') # True<br/>
+        </td>
+        <td class="js">
+            a.startsWith('oN'); // true<br/>
+        </td>
+        <td class="php">
+            str_starts_with($a, 'oN'); // 1<br/>
+        </td>
+    </tr>
+  
+    <tr>
+        <td class="py">
+            a.strip() # можно также удалять символы вначале/вконце<br/>
+        </td>
+        <td class="js">
+            a.trim();<br/>
+        </td>
+        <td class="php">
+            trim($a,"oe"); // 'N'<br/>
+        </td>
+    </tr>
+  
+    <tr>
+        <td class="py">
+            b.zfill(4) # '0001'<br/>
+            b.rjust(4, "-") # '--01'<br/>
+            b.ljust(4, "-") # '01--'<br/>
+        </td>
+        <td class="js">
+            ?<br/>
+            b.padStart(4, "-"); // '--01'<br/>
+            b.padEnd(4, "-"); // '01--'<br/>
+        </td>
+        <td class="php">
+            ?<br/>
+            str_pad($b, 4, '-', STR_PAD_LEFT); // '--01'<br/>
+            str_pad($b, 4, '-', STR_PAD_RIGHT); // '01--'<br/>
+        </td>
+    </tr>
+  
+    <tr>
+        <td class="py">
+            "Hello World"[::-1]    # 'dlroW olleH'<br/>
+        </td>
+        <td class="js">
+            "Hello World".split("").reverse().join("");<br/>
+        </td>
+        <td class="php">
+            strrev("Hello World")<br/>
+        </td>
+    </tr>
+  
+    <tr>
+        <td class="py">
+            'WoW{0}{1}{0}'.format(a, b) # WoWoNe01oNe<br/>
+        </td>
+        <td class="js"></td>
+        <td class="php"></td>
+    </tr>
+  
+
+
+
+  </tbody>
+  
+</table>
+
+<!--
+    <tr>
+        <td class="py"></td>
+        <td class="js"></td>
+        <td class="php"></td>
+    </tr>
+-->
+
+
+<!-- <script  src="resize.js"></script> -->
+
+
+<!-- SCRIPT TO HIDE ALL ELEMENTS WITH CLASSNAME -->
+<!-- 
+<script>
+    var divsToHide = document.getElementsByClassName("js"); //divsToHide is an array
+    for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].style.visibility = "hidden"; // or
+        divsToHide[i].style.display = "none"; // depending on what you're doing
+    }
+</script>
+-->
+
+</body>
+</html>
